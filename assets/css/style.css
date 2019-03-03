@@ -176,4 +176,10 @@ body {
       background-color: #666666;
     } 
 
+    @media (max-width: 640)
+      {
+        .header, .footer {position: static};
+        .info-text {font-size: 22px}
+      }
+
     
