@@ -20,6 +20,10 @@ body {
     z-index: 0;
   }
 
+  .p {
+    z-index:10;
+  }
+
   .links {
     float:right;
     margin-right:15px;
@@ -176,10 +180,33 @@ body {
       background-color: #666666;
     } 
 
-    @media (max-width: 640)
+    @media screen and (max-width: 640px)
       {
-        .header, .footer {position: static};
-        .info-text {font-size: 22px}
+        .body {width: 620px;display:block}
+        .content {width:620px;display:block;}
+        .myname {width:100%; text-align: center;margin:15px}
+        .header {position: static;width:620px;display:block;}
+        .footer {position: static; width:100%;width:620px;display:block;margin:15px 3px;text-align:center}
+        .li {display:block; float:left;width:100%; text-align:center}
+        .ul {left:0; width:620px;float:center;}
+        .info-text {font-size: 22px;margin:5px; padding:3px;display:block}
+        .links {width:80%; float: left; display:block; align-items: left;}
+        .contact-container {width:620px;margin:10px 3px;position:absolute}
+        
+        .pictures {float:none; text-align:center; position:relative;display:block;}
+      }
+
+      @media screen and (max-width: 768px)
+      {
+        .body {width: 768px;display:block}
+        .content {width:768px;display:block;z-index:11}
+        .myname {width:100%; text-align: center;margin:15px}
+        .header {width:768px;display:block;position:static}
+        .footer {position: static; width:100%;width:620px;display:block;margin:15px 3px;text-align:center; bottom:3px;}
+        .info-text {margin:5px; padding:3px;display:block}
+        .contact-container {width:768px;margin:10px 3px;position:absolute}
+        
+        .pictures {float:none; text-align:center; position:relative;display:block}
       }
 
     
